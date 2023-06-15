@@ -1,9 +1,10 @@
 import React from 'react';
-// import { Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
-function ArtDescription () {
+function ArtDescription ({ gallery }) {
+    const galleryId = gallery.id;
     return (
-        <h1>Hello from Art Description</h1>
+        <Link to={`/galleries/${galleryId}`}>{`Back to Gallery ${gallery.name}`}</Link>
     );
 }
 
