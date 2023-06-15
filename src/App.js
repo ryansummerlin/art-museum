@@ -13,7 +13,7 @@ function App() {
           <h2>Harvard Art Museum</h2>
           <p>Look, but Don't Touch. Please select a Gallery in the navigation bar.</p>
         </Route>
-        <Route exact path={`/galleries/:galleryId`}>
+        <Route path={`/galleries/:galleryId`}>
           <GalleryView galleries={harvardArt.records} />
         </Route>
         <Route>
